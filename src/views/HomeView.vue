@@ -1,20 +1,26 @@
 <template>
-	<div class="home text-white">
+	<div class="home">
 		<Navbar />
+		<Banner />
 		<Cards />
+		<Footer />
 	</div>
 </template>
 
 <script>
 import Navbar from "../components/Navbar.vue";
+import Banner from "../components/Banner.vue";
 import Cards from "../components/Cards.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
 	name: "HomeView",
 
 	components: {
-		Cards,
 		Navbar,
+		Cards,
+		Banner,
+		Footer,
 	},
 };
 </script>
@@ -22,6 +28,6 @@ export default {
 //
 <style>
 body {
-	background-color: #1f1d2b !important;
+	background-color: #f5f5f5 !important;
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
-	<nav class="navbar navbar-expand-lg navbar-dark">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white">
 		<div class="container">
-			<a class="navbar-brand" href="#">E-Vents</a>
+			<a class="navbar-brand d-flex align-items-center" href="#"
+				><i class="ri-coupon-3-fill ri-lg me-2"></i>Ngivent Kuy</a
+			>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -14,23 +16,14 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li>
+						<a class="nav-link me-2" aria-current="page" href="#">Sign up</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+					<li>
+						<a class="nav-link button" aria-current="page" href="#">Login</a>
 					</li>
 				</ul>
-				<form class="d-flex">
-					<input
-						class="form-control me-2"
-						type="search"
-						placeholder="Search"
-						aria-label="Search"
-					/>
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
 			</div>
 		</div>
 	</nav>
@@ -43,11 +36,28 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-	background-color: #252836 !important;
+.button {
+	background-color: #5465ff;
+	color: #ffffff !important;
+	padding: 12px 32px !important;
+	border-radius: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
 }
 
-textarea:focus,
+.navbar-brand i {
+	color: #5465ff;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="datetime"]:focus,
@@ -86,5 +96,5 @@ input[type="color"],
 .uneditable-input {
 	outline: 0 none;
 	background: #322f49;
-}
+} */
 </style>
